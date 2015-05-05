@@ -1,0 +1,15 @@
+consul:
+  image: sfrek/consul
+  hostname: consul01
+  command: -server -bootstrap -ui-dir /ui
+  ports:
+    - "172.17.42.1:53:53/udp"
+
+registrator:
+  image: sfrek/registrator
+  links:
+    - consul:consul.service.consul
+  hostname: registrator
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+  command: --internal consul://consul.service.consul:8500

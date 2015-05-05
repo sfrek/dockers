@@ -1,0 +1,11 @@
+elasticsearch:
+  image: elasticsearch:lastest
+
+rabbitmq:
+  image: rabbitmq:3-management
+
+influxdb:
+  image: tutum/influxdb:latest
+
+grafana:
+  image: grafana/grafana:latest
