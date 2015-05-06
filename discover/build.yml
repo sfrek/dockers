@@ -1,0 +1,5 @@
+consul:
+  build: ./consul
+
+registrator:
+  build: ./registrator
