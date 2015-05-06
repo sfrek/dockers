@@ -9,3 +9,8 @@ influxdb:
 
 grafana:
   image: grafana/grafana:latest
+
+fluentd:
+  image: sfrek/fluentd
+  volumes:
+    - /tmp/fluent.d:/fluent.d
