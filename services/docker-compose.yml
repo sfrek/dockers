@@ -13,4 +13,5 @@ grafana:
 fluentd:
   image: sfrek/fluentd
   volumes:
-    - /tmp/fluent.d:/fluent.d
+    - /dockers/services/fluentd/fluent.d:/fluent.d
+    - /srv/logs:/logs
