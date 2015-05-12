@@ -1,0 +1,6 @@
+uchiwa:
+  image: sfrek/uchiwa
+  expose:
+    - 3000
+  volumes:
+    - ./config:/config

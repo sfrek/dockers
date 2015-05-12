@@ -1,0 +1,19 @@
+{
+	"client": {
+		"name": "nombre",
+		"address": "ip",
+		"subscriptions": [
+			"test"
+		],
+		"keepalive": {
+			"thresholds": {
+				"warning": 30,
+				"critical": 60
+			},
+			"handlers": [
+				"mailer"
+			],
+			"refresh": 600
+		}
+	}
+}

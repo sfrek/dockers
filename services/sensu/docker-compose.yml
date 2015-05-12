@@ -1,0 +1,35 @@
+sensuserver:
+  hostname: sensuserver
+  image: sfrek/sensu
+  environment:
+    COMPONENT: server
+  links:
+    - redis
+    - rabbitmq
+
+sensuapi:
+  hostname: sensuapi
+  image: sfrek/sensu
+  environment:
+    COMPONENT: api
+  links:
+    - redis
+    - rabbitmq
+  expose:
+    - 4567
+
+sensuclient:
+  hostname: sensuclient
+  image: sfrek/sensu
+  environment:
+    COMPONENT: client
+  links:
+    - rabbitmq
+  volumes:
+    - ./client:/config
+
+redis:
+  image: redis
+
+rabbitmq:
+  image: rabbitmq:3-management
