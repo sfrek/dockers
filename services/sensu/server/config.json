@@ -9,9 +9,5 @@
 	"redis": {
 		"host": "redis.service.consul",
 		"port": 6379
-	},
-	"api": {
-		"host": "sensu-api.service.consul",
-		"port": 4567
 	}
 }

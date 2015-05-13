@@ -12,6 +12,7 @@
 	},
 	"api": {
 		"host": "sensu-api.service.consul",
-		"port": 4567
+		"port": 4567,
+		"bind": "0.0.0.0"
 	}
 }
