@@ -2,3 +2,6 @@ Dockerfile
 Dockerfile.server
 Dockerfile.api
 Dockerfile.client
+server/Dockerfile
+client/Dockerfile
+api/Dockerfile
