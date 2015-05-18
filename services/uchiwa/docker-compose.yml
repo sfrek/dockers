@@ -1,5 +1,5 @@
 uchiwa:
-  image: sfrek/uchiwa
+  image: uchiwa
   expose:
     - 3000
   volumes:
