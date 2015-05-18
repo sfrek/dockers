@@ -7,3 +7,5 @@ build:
 		git clone -b $(VERSION) git@github.com:sensu/uchiwa.git uchiwa
 	docker build -t sfrek/uchiwa ./uchiwa/
 	rm -rf uchiwa
+
+.PHONY: build

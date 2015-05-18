@@ -1,12 +1,12 @@
 consul:
-  image: sfrek/consul
-  hostname: consul01
+  image: consul
+  hostname: consul
   command: -server -bootstrap -ui-dir /ui
   ports:
     - "172.17.42.1:53:53/udp"
 
 registrator:
-  image: sfrek/registrator
+  image: registrator
   links:
     - consul:consul.service.consul
   hostname: registrator
