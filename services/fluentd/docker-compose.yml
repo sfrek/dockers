@@ -1,0 +1,5 @@
+fluentd:
+        image: packlink/fluentd
+        hostname: fluentd
+        volumes:
+                - fluent.d:/fluent.d

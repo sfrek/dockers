@@ -11,7 +11,7 @@ RUN \
 
 ADD config/fluent.conf /etc/fluent/fluent.conf
 
-VOLUME ["/fluent.d", "/logs"]
+VOLUME ["/fluent.d"]
 
 EXPOSE 24224
 
